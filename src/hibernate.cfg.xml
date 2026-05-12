@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration>
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+        <property name="hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost:5435/proyecto_odontologico
+        </property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">rolo2685</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Entidades del proyecto odontológico -->
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Especialidad"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Odontologo"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Horario_Odontologo"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Paciente"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Agendamiento"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Procedimiento"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Consulta"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Procedimiento_Consulta"/>
+        <mapping class="py.edu.facitec.odonto.modelo.entidades.Receta"/>
+
+    </session-factory>
+</hibernate-configuration>
+
+
+
+
+
+
+
+
