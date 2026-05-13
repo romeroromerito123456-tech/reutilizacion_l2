@@ -88,6 +88,7 @@ public class VentanaPrincipal extends JFrame {
 		mbtnCliente.setFont(new Font("Dialog", Font.PLAIN, 13));
 		mbtnCliente.setText("Paciente");
 		toolBar.add(mbtnCliente);
+		mbtnSisodonto.setBackground(new Color(249, 240, 107));
 		toolBar.add(mbtnSisodonto);
 		
 		Miboton mbtnSisodonto_1 = new Miboton();
